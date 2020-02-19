@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nombre_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/nombre"
+            />
+
+        <TextView
+            android:id="@+id/nombre_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/nombre_texto"
+            />
+
+        <TextView
+            android:id="@+id/telefono_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombre_input"
+            android:text="@string/telefono"
+            />
+
+        <TextView
+            android:id="@+id/telefono_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombre_input"
+            android:layout_toRightOf="@id/telefono_texto"
+            />
+
+        <TextView
+            android:id="@+id/email_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/telefono_input"
+            android:text="@string/email"
+            />
+
+        <TextView
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/telefono_input"
+            android:layout_toRightOf="@id/email_texto"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
